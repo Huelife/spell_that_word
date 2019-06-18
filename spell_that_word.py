@@ -8,6 +8,16 @@ words_store = ["cat","dog","mouse","bird","human","wolf"]
 rand_num = randint(0,5)
 words_rand = words_store[rand_num]
 
+class Game():
+  def __init__(self):
+    pass
+  
+  def rand_info(self):
+    pass
+
+  def question(self):
+    pass
+
 #loop continues until user input matches printed word
 while True:
   try:
