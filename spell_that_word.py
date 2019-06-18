@@ -7,18 +7,18 @@ class Game():
   def __init__(self):
     self.words_store = ["cat","dog","mouse","bird","human","wolf"]
     self.rand_num = randint(0,5)
-    self.words_rand = words_store[rand_num]
+    self.words_rand = self.words_store[self.rand_num]
   
   def question(self):
     while True:
       try:
-        print(words_rand)
+        print(self.words_rand)
         user_input = input("Type the word you see! ")
       except ValueError:
         print("Error!")
         continue
       else:
-        if re.match(words_rand, user_input):
+        if re.match(self.words_rand, user_input):
           print("Correct!")
           break
         else:
