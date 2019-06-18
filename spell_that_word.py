@@ -13,7 +13,7 @@ with open("words.csv","r") as fin:
 #Game class with word and random number variables
 class Game():
   def __init__(self):
-    self.words_store = ["cat","dog","mouse","bird","human","wolf"]
+    self.words_store = word_list
     self.rand_num = randint(0,5)
     self.words_rand = self.words_store[self.rand_num]
   
