@@ -3,10 +3,12 @@
 import re
 from random import randint
 
+#word and random number variables
 words_store = ["cat","dog","mouse","bird","human","wolf"]
 rand_num = randint(0,5)
 words_rand = words_store[rand_num]
 
+#loop continues until user input matches printed word
 while True:
   try:
     print(words_rand)
