@@ -1,6 +1,5 @@
 #spell_that_word.py: Simple spelling text game
 
-import re
 from random import randint
 
 #Game class with word and random number variables
@@ -20,7 +19,7 @@ class Game():
         print("Error!")
         continue
       else:
-        if re.match(self.words_rand,user_input):
+        if user_input == self.words_rand:
           print("Correct!")
           break
         else:
