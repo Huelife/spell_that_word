@@ -13,12 +13,12 @@ class Game():
     while True:
       try:
         print(self.words_rand)
-        user_input = input("Type the word you see! ")
+        user_input = input("Type the word you see! ").lower()
       except ValueError:
         print("Error!")
         continue
       else:
-        if re.match(self.words_rand, user_input):
+        if re.match(self.words_rand,user_input):
           print("Correct!")
           break
         else:
