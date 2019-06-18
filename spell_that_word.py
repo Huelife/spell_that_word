@@ -3,14 +3,11 @@
 import re
 from random import randint
 
-#word and random number variables
-words_store = ["cat","dog","mouse","bird","human","wolf"]
-rand_num = randint(0,5)
-words_rand = words_store[rand_num]
-
 class Game():
   def __init__(self):
-    pass
+    self.words_store = ["cat","dog","mouse","bird","human","wolf"]
+    self.rand_num = randint(0,5)
+    self.words_rand = words_store[rand_num]
   
   def rand_info(self):
     pass
