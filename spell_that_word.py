@@ -9,9 +9,6 @@ class Game():
     self.rand_num = randint(0,5)
     self.words_rand = words_store[rand_num]
   
-  def rand_info(self):
-    pass
-
   def question(self):
     pass
 
