@@ -1,6 +1,14 @@
 #spell_that_word.py: Simple spelling text game
 
+import csv
 from random import randint
+
+word_list = []
+
+with open("words.csv","r") as fin:
+  read_data = csv.reader(fin)
+  for row in read_data:
+    word_list += row
 
 #Game class with word and random number variables
 class Game():
