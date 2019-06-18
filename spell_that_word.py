@@ -15,7 +15,7 @@ class Game():
         word_list += row
         
     self.words_store = word_list
-    self.rand_num = randint(0,5)
+    self.rand_num = randint(0,16)
     self.words_rand = self.words_store[self.rand_num]
   
   #loop continues until user input matches printed word
