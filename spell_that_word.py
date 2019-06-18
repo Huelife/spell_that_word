@@ -3,12 +3,14 @@
 import re
 from random import randint
 
+#Game class with word and random number variables
 class Game():
   def __init__(self):
     self.words_store = ["cat","dog","mouse","bird","human","wolf"]
     self.rand_num = randint(0,5)
     self.words_rand = self.words_store[self.rand_num]
   
+  #loop continues until user input matches printed word
   def question(self):
     while True:
       try:
