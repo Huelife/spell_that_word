@@ -24,3 +24,6 @@ class Game():
         else:
           print("Incorrect!")
           continue
+          
+start = Game()
+start.question()
