@@ -3,19 +3,18 @@
 import csv
 from random import randint
 
-word_list = []
-
 #Game class with word and random number variables
 class Game():
   def __init__(self):
+    self.words_store = []
+    self.rand_num = randint(0,16)
+    
     with open("words.csv","r") as fin:
       global word_list
       read_data = csv.reader(fin)
       for row in read_data:
-        word_list += row
-        
-    self.words_store = word_list
-    self.rand_num = randint(0,16)
+        self.words_store += row
+           
     self.words_rand = self.words_store[self.rand_num]
   
   #loop continues until user input matches printed word
