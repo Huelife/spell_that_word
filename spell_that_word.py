@@ -10,7 +10,6 @@ class Game():
     self.rand_num = randint(0,16)
     
     with open("words.csv","r") as fin:
-      global word_list
       read_data = csv.reader(fin)
       for row in read_data:
         self.words_store += row
